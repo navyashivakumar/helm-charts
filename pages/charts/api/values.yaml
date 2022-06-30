@@ -45,3 +45,5 @@ livenessProbe:
 deployment:
   containerPort: 8080
   replicaCount: 1
+
+dbname: pages

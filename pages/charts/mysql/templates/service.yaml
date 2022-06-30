@@ -5,4 +5,7 @@ metadata:
 spec:
   ports:
     - port: {{ .Values.service.port }}
+  selector:
+    app: {{ include "mysql.fullname" . }}
+  type: {{ .Values.service.type }}
 
